@@ -8,9 +8,7 @@ export const Repo = ({ repo }) => {
     stargazers_count,
     open_issues_count,
     created_at,
-    avatar_url,
-    url,
-    id
+    owner,
   } = repo;
 
   const countsInThousands = useCallback(
@@ -25,17 +23,13 @@ export const Repo = ({ repo }) => {
     [stargazers_count, open_issues_count]
   );
 //use userId from API as key
-useEffect(()=>{
-  fetch("https://avatars.githubusercontent.com/u/62311769?v=4")
-  .then((res)=>console.log(res))
-})
   return (
     <div className="container-fluid card px-2 py-5 m-2 rounded font-weight-bold">
       <div className="row">
         <div className="col-sm-3 text-center">
           <img
-            style={{ width: "5rem", height: "5rem", margin: "auto" }}
-            src={`https://avatars.githubusercontent.com/${name}.png?size=460`}
+            style={{ width: "5rem", height: "5rem", margin: "auto", position:"relative", top: "50%",transform: "translateY(-50%)" }}
+            src={owner.avatar_url}
             alt="profile picture"
           />
         </div>
