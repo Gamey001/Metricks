@@ -26,7 +26,12 @@ This is essentially a coming soon website, inviting intrested users to join the 
 
 ### Demo Routes
 1. /comingsoon
+![metricksHome](https://user-images.githubusercontent.com/87187530/171481736-25153472-c253-4046-9c7a-e626a017a8f8.PNG)
+
 2. /about
+![metricksAbout](https://user-images.githubusercontent.com/87187530/171481813-69c29e7e-869e-4104-b913-a3f95eabdc97.PNG)
+
 3. /github
+![metricksGithub](https://user-images.githubusercontent.com/87187530/171481849-6758efc7-f322-4928-a0c2-eacd26e40e3f.PNG)
 
 
