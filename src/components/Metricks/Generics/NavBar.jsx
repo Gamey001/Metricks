@@ -1,11 +1,12 @@
 import React from "react";
-import "../../../index.css"
+import {Link} from "react-router-dom";
+import "../../../index.css";
 
 
 const navBarLinks = [
-    {route: "#", title: "About us"},
-    {route: "#", title: "Blog"},
-    {route: "#", title: "Contact us"}
+    {route: "/about", title: "About us"},
+    {route: "/", title: "Blog"},
+    {route: "/", title: "Contact us"}
 ]
 export const NavBar = () => {
   /**Navbar uniques styles */
@@ -40,9 +41,9 @@ export const NavBar = () => {
       <div className="collapse navbar-collapse" id="collapsibleNavbar">
         <ul style={{marginLeft: "61.625rem !important"}} className="navbar-nav ml-auto">
          {
-             navBarLinks.map(({title})=>{
+             navBarLinks.map(({route, title})=>{
                 return<li key={title} className="nav-item">
-            <a style={{marginBottom: "8.1875rem",background: (title==="Contact us") && "#401ac1", paddingTop: "1.5rem", borderRadius: "2.3rem", marginRight: "4.625rem",paddingRight: "2.4375rem",paddingLeft: "2.4375rem"}} className={`nav-link mt-2 ${title==='Contact us'? 'btn contact-us py-4 px-5':''}`}>{title}</a>
+            <Link to={route} style={{marginBottom: "8.1875rem",background: (title==="Contact us") && "#401ac1", paddingTop: "1.5rem", borderRadius: "2.3rem", marginRight: "4.625rem",paddingRight: "2.4375rem",paddingLeft: "2.4375rem"}} className={`nav-link mt-2 ${title==='Contact us'? 'btn contact-us py-4 px-5':''}`}>{title}</Link>
           </li>
              })
          }
