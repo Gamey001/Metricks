@@ -24,7 +24,7 @@ This is essentially a coming soon website, inviting intrested users to join the 
 
 ----
 
-### Demo
+### Demo Routes
 1. /comingsoon
 2. /about
 3. /github
