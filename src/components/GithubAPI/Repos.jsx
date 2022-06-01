@@ -1,6 +1,7 @@
 import { Repo } from "./Repo";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { topReposContext } from "../../context/topReposContext";
+import { Footer } from "../Metricks/Generics/Footer";
 
 export const Repos = () => {
   const { state } = useContext(topReposContext);
@@ -18,6 +19,9 @@ export const Repos = () => {
               </li>
             ))}
           </ul>
+          <footer className="text-white bg-secondary rounded">
+            <Footer />
+          </footer>
         </div>
       ) : (
         <h2 className="text-info">Please wait...</h2>
