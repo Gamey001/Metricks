@@ -2,6 +2,8 @@
 
 This is essentially a coming soon website, inviting intrested users to join the waiting list by submitting their name and email. A sub-project can also be accessed through the /github route. The project displays a list of top trending github repos, with data obtained from the this API https://docs.github.com/en/rest/search#search-repositories.
 
+**Life Version:**https://gamalmetricks.netlify.app/
+
 **Tech Stack:** React.js, Bootstrap, css3
 
 **libraries:**
